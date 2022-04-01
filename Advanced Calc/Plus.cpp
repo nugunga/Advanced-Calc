@@ -5,6 +5,6 @@
 // 왜 오류가 생기느냐
 // 연결을 안했음.
 
-int Plus(int a, int b) { 
+double Plus(int a, int b) { 
 	return a + b;
 }

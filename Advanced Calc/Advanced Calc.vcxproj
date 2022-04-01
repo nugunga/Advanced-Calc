@@ -147,6 +147,7 @@
     <ClCompile Include="Plus.cpp" />
     <ClCompile Include="Pow.cpp" />
     <ClCompile Include="Scanner.cpp" />
+    <ClCompile Include="Sqrt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h" />

@@ -1,6 +1,6 @@
 
 #include "Command.h"
 
-int Mod(int a, int b) {
+double Mod(int a, int b) {
 	return a % b;
 }

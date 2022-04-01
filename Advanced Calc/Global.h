@@ -12,12 +12,13 @@ enum Operation {
 	DIVI,
 	MOD,
 	POW,
+	SQRT,
 	LAST_LIST
 };
 
 // 함수 포인터라고 부릅니다.
 // 함수 포인터 = 함수의 주소를 가르키는 포인터 변수
-typedef int (*FunctionPointer)(int, int);
+typedef double (*FunctionPointer)(int, int);
 
 // Keyword = 키워드, 핵심 단어
 struct KeyWordTable {

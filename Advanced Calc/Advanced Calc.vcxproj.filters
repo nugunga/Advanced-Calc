@@ -45,6 +45,9 @@
     <ClCompile Include="Scanner.cpp">
       <Filter>소스 파일\Utility</Filter>
     </ClCompile>
+    <ClCompile Include="Sqrt.cpp">
+      <Filter>소스 파일\Command</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">

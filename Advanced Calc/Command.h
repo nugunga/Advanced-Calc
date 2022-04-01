@@ -6,9 +6,10 @@
 
 
 
-int Plus(int a, int b);
-int Minus(int a, int b);
-int Mult(int a, int b);
-int Divi(int a, int b);
-int Mod(int a, int b);
-int Pow(int a, int b);
+double Plus(int a, int b);
+double Minus(int a, int b);
+double Mult(int a, int b);
+double Divi(int a, int b);
+double Mod(int a, int b);
+double Pow(int a, int b);
+double Sqrt(int a, int b);

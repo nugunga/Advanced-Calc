@@ -13,6 +13,7 @@ struct KeyWordTable OpertorTable[LAST_LIST] = {
 	{ "/", Divi },
 	{ "%", Mod },
 	{ "^", Pow },
+	{ "&", Sqrt },
 };
 
 int main()
@@ -21,7 +22,7 @@ int main()
 	getline(cin, op);
 	// word = 한 단어
 	auto word = Scanner(op.c_str());
-	int sum = -1;
+	double sum = -1;
 	for (auto var : OpertorTable) {
 		// string compare => compare는 비교하다, 여기서는 문자열을 비교하다라는 의미에요
 		if (word[1] == var.Name) {
