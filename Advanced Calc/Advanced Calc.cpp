@@ -14,6 +14,7 @@ struct KeyWordTable OpertorTable[LAST_LIST] = {
 	{ "%", Mod },
 	{ "^", Pow },
 	{ "&", Sqrt },
+	{ "ENDLIST", NULL },
 };
 
 int main()
@@ -24,10 +25,16 @@ int main()
 	auto word = Scanner(op.c_str());
 	double sum = -1;
 	for (auto var : OpertorTable) {
-		// string compare => compare는 비교하다, 여기서는 문자열을 비교하다라는 의미에요
 		if (word[1] == var.Name) {
 			sum = var.CallbackMethod(stoi(word[0]), stoi(word[2]));
 			break; // < 반복문 멈춰!
+		}
+		else if (var.Name == "ENDLIST") {
+			cerr << "지원하지 않는 명령어입니다." << endl;
+			// cerr : console Error라고 부릅니다.
+			// 문제가 생겼을 때 운영체제 알리기 쓰는 경우가 있으며
+			// 유저에게 문제가 있음을 알릴 때 쓉니다.
+			return -1;
 		}
 	}
 	cout << sum << endl;

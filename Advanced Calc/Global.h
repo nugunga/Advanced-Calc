@@ -6,6 +6,7 @@
 
 // Operation 연산하는 행위
 enum Operation {
+	NONE,
 	PLUS,
 	MINUS,
 	MULT,
